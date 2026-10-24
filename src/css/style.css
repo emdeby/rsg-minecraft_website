@@ -1,0 +1,60 @@
+body {
+    background-color: #262626;
+}
+
+.topbar {
+    background-color: #537953;
+    font-family: Upheaval;
+    color: #e8e8e8;
+    padding: 7 7 7 14;
+    letter-spacing: 3;
+    font-size: 28;
+    border-radius: 10px;
+}
+
+.main p {
+    font-family: Minecraftia;
+    color: #c3c3c3;
+    font-size: 12;
+    margin-left: 12px;
+}
+
+.main h3 {
+    font-family: Upheaval;
+    font-size: 24;
+    letter-spacing: 3;
+    color: #dbdbdb;
+}
+
+.main iframe {
+    margin-left: 20px;
+}
+
+.main .infos {
+    background-color: #404040;
+    border-radius: 10px;
+    padding: 1 7 1 14;
+}
+
+.main .map {
+    margin-top: 20;
+    background-color: #404040;
+    border-radius: 10px;
+    padding: 1 7 1 14;
+}
+
+.main .infos .domain {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: -12px
+}
+
+.main .infos .domain button {
+    color: #c3c3c3;
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 5 5 1 5;
+    margin-bottom: 12;
+}
