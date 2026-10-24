@@ -26,10 +26,6 @@ body {
     color: #dbdbdb;
 }
 
-.main iframe {
-    margin-left: 20px;
-}
-
 .main .infos {
     background-color: #404040;
     border-radius: 10px;
@@ -57,4 +53,16 @@ body {
     border: none;
     padding: 5 5 1 5;
     margin-bottom: 12;
+}
+
+.main .map .map-iframe {
+    width: calc(100% - 12px);
+    margin-bottom: 12;
+}
+
+.main .map .map-iframe iframe {
+    width: 100%;
+    height: 1000px;
+    border: none;
+    display: block;
 }
