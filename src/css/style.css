@@ -96,3 +96,24 @@ body {
     border: none;
     display: block;
 }
+
+.credits-container {
+    display: block;
+    font-family: Minecraftia;
+    color: #6c6c6c;
+    font-size: 10;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 8;
+}
+
+.credits {
+    font-family: Minecraftia;
+    color: #6c6c6c;
+    font-size: 10;
+    text-decoration: none;
+}
+
+.credits:hover {
+    color: #e8e8e8;
+}
