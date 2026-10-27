@@ -1,4 +1,13 @@
 export default async function handler(req, res) {
+    // CORS: Anfragen von rsg-minecraft.de erlauben
+    res.setHeader("Access-Control-Allow-Origin", "https://www.rsg-minecraft.de");
+    res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+    if (req.method === "OPTIONS") {
+        return res.status(204).end();
+    }
+
     const token = process.env.EXAROTON_TOKEN;
     const serverId = process.env.EXAROTON_SERVER_ID;
 
