@@ -11,13 +11,15 @@ body {
 }
 
 .topbar a {
-    font-family: Minecraftia;
+    display: inline-block;
+    line-height: 14px;
+    font-family: Upheaval;
     font-size: 14;
     color: #e8e8e8;
     background-color: #537953;
     border-radius: 10px;
     text-decoration: none;
-    padding: 10 8 10 8;
+    padding: 13 8;
 }
 
 .topbar a:hover {
