@@ -1,4 +1,4 @@
-export default function handler(req, res) {
+export default async function handler(req, res) {
     const token = process.env.EXAROTON_TOKEN;
     const serverId = process.env.EXAROTON_SERVER_ID;
 
@@ -14,7 +14,20 @@ export default function handler(req, res) {
         })
     }
 
+    const headers = {
+        Authorization: `Bearer ${token}`
+    };
+    const response = await fetch(`https://api.exaroton.com/v1/servers/${serverId}`, {headers: headers });
+
+    if (!response.ok) {
+        return res.status(response.status).json({
+            message: "Fetching exaroton api failed!"
+        })
+    }
+
+    const data = await response.json();
+
     return res.status(200).json({
-        message: "All set!"
+        data
     });
 }
