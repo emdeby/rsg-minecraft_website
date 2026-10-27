@@ -27,7 +27,15 @@ export default async function handler(req, res) {
 
     const data = await response.json();
 
+    const version = data.data.software.version;
+    const status = data.data.status;
+    const playersMax = data.data.players.max;
+    const playersOnline = data.data.players.count;
+
     return res.status(200).json({
-        data
-    });
+        version,
+        status,
+        playersMax,
+        playersOnline
+    })
 }
