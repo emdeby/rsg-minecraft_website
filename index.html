@@ -34,7 +34,9 @@
                             </svg>
                         </button>
                     </div>
-                    <p>Version: 26.3</p>
+                    <p>Status: <span id="server-status"></span></p>
+                    <p>Version: <span id="server-version"></span></p>
+                    <p>Players: <span id="playersOnline"></span> / <span id="playersMax"></span></p>
                     <p>Seed: 978</p>
                     <p>Online seit: 12.01.2023</p>
                 </div>
@@ -55,5 +57,7 @@
                 navigator.clipboard.writeText("join.rsg-minecraft.de")
             }
         </script>
+
+        <script src="./scripts/server-stats.js"></script>
     </body>
 </html>
