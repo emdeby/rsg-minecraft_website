@@ -2,27 +2,19 @@ export default function handler(req, res) {
     const token = process.env.EXAROTON_TOKEN;
     const serverId = process.env.EXAROTON_SERVER_ID;
 
-    return res.status(200).json({
-        message: "Hello world!"
-    });
-
-    if (token) {
-        return res.status(200).json({
-            token: "Vorhanden!"
-        })
-    } else {
+    if (!token) {
         return res.status(500).json({
-            token: "Nicht vorhanden!"
+            message: "Token missing!"
         })
-    }
+    } 
     
-    if (serverId) {
-        return res.status(200).json({
-            serverId: "Vorhanden!"
-        })
-    } else {
+    if (!serverId) {
         return res.status(500).json({
-            serverId: "Nicht vorhanden!"
+            message: "Server ID missing!"
         })
     }
+
+    return res.status(200).json({
+        message: "All set!"
+    });
 }
