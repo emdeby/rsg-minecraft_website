@@ -3,7 +3,7 @@ async function getServerStats() {
     const data = await response.json();
     console.log(data);
 
-    const statusDot = document.getElementById("server-status-dot");
+    const statusDot = document.getElementById("server-status");
     statusDot.classList.remove("online", "offline", "unknown");
 
     if (data.status == 0) {
