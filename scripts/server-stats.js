@@ -1,9 +1,9 @@
 async function getServerStats() {
     const response = await fetch("https://rsg-minecraftwebsite-wjqr.vercel.app/api/server_infos");
     const data = await response.json();
+    console.log(data);
 
     const statusDot = document.getElementById("server-status-dot");
-
     statusDot.classList.remove("online", "offline", "unknown");
 
     if (data.status == 0) {
@@ -14,8 +14,6 @@ async function getServerStats() {
         statusDot.classList.add("unknown");
     }
 
-    console.log(data);
-    document.getElementById("server-status").textContent = status
     document.getElementById("server-version").textContent = data.version;
     document.getElementById("playersOnline").textContent = data.playersOnline;
     document.getElementById("playersMax").textContent = data.playersMax;
