@@ -3,6 +3,34 @@ body {
 }
 
 .topbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -25;
+    width: 100%;
+}
+
+.topbar a {
+    font-family: Minecraftia;
+    font-size: 14;
+    color: #e8e8e8;
+    background-color: #537953;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10 8 10 8;
+}
+
+.topbar a:hover {
+    color: #262626;
+    background-color: #e8e8e8;
+}
+
+.topbar .login {
+    background-color: #d6753d;
+    margin-left: auto;
+}
+
+.topbar .title {
     background-color: #537953;
     font-family: Upheaval;
     color: #e8e8e8;
