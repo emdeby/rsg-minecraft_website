@@ -117,3 +117,24 @@ body {
 .credits:hover {
     color: #e8e8e8;
 }
+
+.server-status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-bottom: 8;
+    margin-left: 4;
+}
+
+.server-status-dot.online {
+    background-color: #80ff00;
+}
+
+.server-status-dot.offline {
+    background-color: #ff0000;
+}
+
+.server-status-dot.unknown {
+    background-color: #feed00;
+}

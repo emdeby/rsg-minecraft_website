@@ -2,13 +2,16 @@ async function getServerStats() {
     const response = await fetch("https://rsg-minecraftwebsite-wjqr.vercel.app/api/server_infos");
     const data = await response.json();
 
-    let status = "null";
+    const statusDot = document.getElementById("server-status-dot");
+
+    statusDot.classList.remove("online", "offline", "unknown");
+
     if (data.status == 0) {
-        status = "Offline"
+        statusDot.classList.add("online");
     } else if (data.status == 1) {
-        status = "Online"
+        statusDot.classList.add("offline");
     } else {
-        status = "Unknown"
+        statusDot.classList.add("unknown");
     }
 
     console.log(data);
