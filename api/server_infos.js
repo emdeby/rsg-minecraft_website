@@ -40,11 +40,13 @@ export default async function handler(req, res) {
     const status = data.data.status;
     const playersMax = data.data.players.max;
     const playersOnline = data.data.players.count;
+    const playerList = data.data.players.list;
 
     return res.status(200).json({
         version,
         status,
         playersMax,
-        playersOnline
+        playersOnline,
+        playerList
     })
 }
