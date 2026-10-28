@@ -24,19 +24,22 @@
                     <h3>INFOS</h3>
                     <div class="domain">
                         <p>Domain: join.rsg-minecraft.de</p>
-                        <button onclick="copyIP()">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                width="16" height="16"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="#ffffff"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="8" y="8" width="13" height="13" rx="2"/>
-                                <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/>
-                            </svg>
-                        </button>
+                        <div class="tooltip">
+                            <button onclick="copyIP()" onmouseout="outFunc()">
+                                <span class="tooltiptext" id="copyIP-tooltip">In der Zwischenablage speichern</span>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="#ffffff"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="8" y="8" width="13" height="13" rx="2"/>
+                                    <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <p>Status: <span id="server-status" class="server-status-dot unknown"></span></p>
                     <p>Version: <span id="server-version"></span></p>
@@ -44,9 +47,9 @@
                     <p>Online seit: 12.01.2023</p>
                 </div>
                 <div class="player-info">
-                    <h3>Spieler:</h3>
+                    <h3>Spieler</h3>
                     <p><span id="playersOnline"></span> / <span id="playersMax"></span></p>
-                    <a href="./www/playerList.html">Spieleliste →</a>
+                    <a href="./www/playerList.html">→</a>
                 </div>
             </div>
                 <div class="map">
@@ -64,6 +67,13 @@
         <script>
             function copyIP() {
                 navigator.clipboard.writeText("join.rsg-minecraft.de")
+                var tooltip = document.getElementById("copyIP-tooltip");
+                tooltip.innerHTML = "Kopiert!";
+            }
+
+            function outFunc() {
+                var tooltip = document.getElementById("copyIP-tooltip");
+                tooltip.innerHTML = "In der Zwischenablage speichern";
             }
         </script>
 

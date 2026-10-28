@@ -7,6 +7,10 @@ h3 {
     font-size: 24px;
     letter-spacing: 3px;
     color: #dbdbdb;
+    background-color: #626262;
+    padding: 3px 10px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .back-button {

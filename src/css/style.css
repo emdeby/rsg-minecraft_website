@@ -62,14 +62,24 @@
     text-decoration: none;
     font-family: Upheaval;
     color: #dbdbdb;
+    background-color: #626262;
     margin-left: auto;
     margin-right: 8px;
+    padding: 3px 10px;
+    border-radius: 10px;
+}
+
+.main .first-row .player-info a:hover {
+    background-color: #dbdbdb;
+    color: #404040;
+    padding: 3px 10px;
+    border-radius: 10px;
 }
 
 .main p {
     font-family: Minecraftia;
     color: #c3c3c3;
-    font-size: 12px;
+    font-size: 16px;
     margin-left: 12px;
 }
 
@@ -101,6 +111,49 @@
     border: none;
     padding: 5px 5px 1px 5px;
     margin-bottom: 12px;
+}
+
+.main .infos .domain button:hover {
+    background-color: #626262;
+    border-radius: 10px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 .main .map .map-iframe {
