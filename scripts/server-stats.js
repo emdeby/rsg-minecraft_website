@@ -7,9 +7,9 @@ async function getServerStats() {
     statusDot.classList.remove("online", "offline", "unknown");
 
     if (data.status == 0) {
-        statusDot.classList.add("online");
-    } else if (data.status == 1) {
         statusDot.classList.add("offline");
+    } else if (data.status == 1) {
+        statusDot.classList.add("online");
     } else {
         statusDot.classList.add("unknown");
     }
