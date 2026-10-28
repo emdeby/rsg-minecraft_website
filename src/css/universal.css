@@ -2,6 +2,13 @@ body {
     background-color: #262626;
 }
 
+h3 {
+    font-family: Upheaval;
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #dbdbdb;
+}
+
 .back-button {
     display: inline-block;
     font-family: Upheaval;
@@ -12,7 +19,6 @@ body {
     padding: 13px 8px;
     background-color: #d6753d;
     margin-left: auto;
-    position: fixed;
 }
 
 .back-button:hover {
