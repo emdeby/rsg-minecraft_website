@@ -1,12 +1,8 @@
-body {
-    background-color: #262626;
-}
-
 .topbar {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: -25;
+    margin-top: -25px;
     width: 100%;
 }
 
@@ -14,12 +10,12 @@ body {
     display: inline-block;
     line-height: 14px;
     font-family: Upheaval;
-    font-size: 14;
+    font-size: 14px;
     color: #e8e8e8;
     background-color: #537953;
     border-radius: 10px;
     text-decoration: none;
-    padding: 13 8;
+    padding: 13px 8px;
 }
 
 .topbar a:hover {
@@ -36,37 +32,59 @@ body {
     background-color: #537953;
     font-family: Upheaval;
     color: #e8e8e8;
-    padding: 7 7 7 14;
-    letter-spacing: 3;
-    font-size: 28;
+    padding: 7px 7px 7px 14px;
+    letter-spacing: 3px;
+    font-size: 28px;
     border-radius: 10px;
+}
+
+.first-row {
+    display: flex;
+    align-items: top;
+    gap: 20px;
+}
+
+.player-info {
+    background-color: #404040;
+    border-radius: 10px;
+    padding: 1px 7px 1px 14px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .first-row .player-info p {
+    font-size: 35px;
+    text-align: center;
+}
+
+.main .first-row .player-info a {
+    text-decoration: none;
+    font-family: Upheaval;
+    color: #dbdbdb;
+    margin-left: auto;
+    margin-right: 8px;
 }
 
 .main p {
     font-family: Minecraftia;
     color: #c3c3c3;
-    font-size: 12;
+    font-size: 12px;
     margin-left: 12px;
-}
-
-.main h3 {
-    font-family: Upheaval;
-    font-size: 24;
-    letter-spacing: 3;
-    color: #dbdbdb;
 }
 
 .main .infos {
     background-color: #404040;
     border-radius: 10px;
-    padding: 1 7 1 14;
+    padding: 1px 7px 1px 14px;
+    flex: 1
 }
 
 .main .map {
-    margin-top: 20;
+    margin-top: 20px;
     background-color: #404040;
     border-radius: 10px;
-    padding: 1 7 1 14;
+    padding: 1px 7px 1px 14px;
 }
 
 .main .infos .domain {
@@ -81,13 +99,13 @@ body {
     background: none;
     cursor: pointer;
     border: none;
-    padding: 5 5 1 5;
-    margin-bottom: 12;
+    padding: 5px 5px 1px 5px;
+    margin-bottom: 12px;
 }
 
 .main .map .map-iframe {
     width: calc(100% - 12px);
-    margin-bottom: 12;
+    margin-bottom: 12px;
 }
 
 .main .map .map-iframe iframe {
@@ -101,16 +119,16 @@ body {
     display: block;
     font-family: Minecraftia;
     color: #6c6c6c;
-    font-size: 10;
+    font-size: 10px;
     text-align: center;
     text-decoration: none;
-    padding: 8;
+    padding: 8px;
 }
 
 .credits {
     font-family: Minecraftia;
     color: #6c6c6c;
-    font-size: 10;
+    font-size: 10px;
     text-decoration: none;
 }
 
@@ -123,8 +141,8 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin-bottom: 8;
-    margin-left: 4;
+    margin-bottom: 8px;
+    margin-left: 4px;
 }
 
 .server-status-dot.online {
