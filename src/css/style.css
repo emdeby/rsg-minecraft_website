@@ -156,6 +156,14 @@
   opacity: 1;
 }
 
+.map a {
+    text-decoration: none;
+}
+
+#map-title:hover {
+    color: #d6753d;
+}
+
 .main .map .map-iframe {
     width: calc(100% - 12px);
     margin-bottom: 12px;
