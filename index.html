@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="de">
 <html>
     <head>
         <title>RSG Minecraft</title>
@@ -5,6 +7,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./src/css/style.css">
         <link rel="stylesheet" href="./src/css/fonts.css">
+        <link rel="stylesheet" href="./src/css/universal.css">
     </head>
     <body>
         <div class="topbar">
@@ -16,6 +19,7 @@
         </div>
 
         <div class="main">
+            <div class="first-row">
                 <div class="infos">
                     <h3>INFOS</h3>
                     <div class="domain">
@@ -35,11 +39,16 @@
                         </button>
                     </div>
                     <p>Status: <span id="server-status" class="server-status-dot unknown"></span></p>
-                    <p>Spieler: <span id="playersOnline"></span> / <span id="playersMax"></span></p>
                     <p>Version: <span id="server-version"></span></p>
                     <p>Seed: 978</p>
                     <p>Online seit: 12.01.2023</p>
                 </div>
+                <div class="player-info">
+                    <h3>Spieler:</h3>
+                    <p><span id="playersOnline"></span> / <span id="playersMax"></span></p>
+                    <a href="./www/playerList.html">Spieleliste →</a>
+                </div>
+            </div>
                 <div class="map">
                     <h3>MAP</h3>
                     <div class="map-iframe">

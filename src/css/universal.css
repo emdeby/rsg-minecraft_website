@@ -1,0 +1,21 @@
+body {
+    background-color: #262626;
+}
+
+.back-button {
+    display: inline-block;
+    font-family: Upheaval;
+    font-size: 14px;
+    color: #e8e8e8;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 13px 8px;
+    background-color: #d6753d;
+    margin-left: auto;
+    position: fixed;
+}
+
+.back-button:hover {
+    color: #262626;
+    background-color: #e8e8e8;
+}
