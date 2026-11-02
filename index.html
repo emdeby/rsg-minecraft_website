@@ -20,9 +20,9 @@
 
         <div class="main">
             <div class="first-row">
-                <div class="infos">
+                <div class="base-block" id="infos">
                     <h3>INFOS</h3>
-                    <div class="domain">
+                    <div id="domain">
                         <p>Domain: join.rsg-minecraft.de</p>
                         <div class="tooltip">
                             <button onclick="copyIP()" onmouseout="outFunc()">
@@ -46,13 +46,13 @@
                     <p>Seed: 978</p>
                     <p>Online seit: 12.01.2023</p>
                 </div>
-                <div class="player-info">
+                <div class="base-block" id="player-info">
                     <h3>Spieler</h3>
                     <p><span id="playersOnline"></span> / <span id="playersMax"></span></p>
                     <a href="./www/playerList.html">→</a>
                 </div>
             </div>
-                <div class="map">
+                <div class="base-block" id="map">
                     <a href="https://join.rsg-minecraft.de"><h3 id="map-title">MAP↗</h3></a>
                     <div class="map-iframe">
                         <iframe src="https://join.rsg-minecraft.de" scrolling="no"></iframe>

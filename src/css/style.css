@@ -16,6 +16,7 @@
     border-radius: 10px;
     text-decoration: none;
     padding: 13px 8px;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .topbar a:hover {
@@ -44,7 +45,7 @@
     gap: 20px;
 }
 
-.player-info {
+#player-info {
     background-color: #404040;
     border-radius: 10px;
     padding: 1px 7px 1px 14px;
@@ -53,12 +54,12 @@
     flex-direction: column;
 }
 
-.main .first-row .player-info p {
+.main .first-row #player-info p {
     font-size: 50px;
     text-align: center;
 }
 
-.main .first-row .player-info a {
+.main .first-row #player-info a {
     text-decoration: none;
     font-family: Upheaval;
     color: #dbdbdb;
@@ -69,9 +70,10 @@
     margin-right: 8px;
     padding: 3px 10px;
     border-radius: 10px;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.05);
 }
 
-.main .first-row .player-info a:hover {
+.main .first-row #player-info a:hover {
     background-color: #dbdbdb;
     color: #404040;
     padding: 3px 10px;
@@ -85,28 +87,18 @@
     margin-left: 12px;
 }
 
-.main .infos {
-    background-color: #404040;
-    border-radius: 10px;
-    padding: 1px 7px 1px 14px;
-    flex: 1
-}
-
-.main .map {
+.main #map {
     margin-top: 20px;
-    background-color: #404040;
-    border-radius: 10px;
-    padding: 1px 7px 1px 14px;
 }
 
-.main .infos .domain {
+.main #infos #domain {
     display: flex;
     align-items: center;
     gap: 5px;
     margin-bottom: -12px
 }
 
-.main .infos .domain button {
+.main #infos #domain button {
     color: #dbdbdb;
     background: none;
     cursor: pointer;
@@ -115,7 +107,7 @@
     margin-bottom: 12px;
 }
 
-.main .infos .domain button:hover {
+.main #infos #domain button:hover {
     background-color: #626262;
     border-radius: 10px;
 }
@@ -160,7 +152,7 @@
     opacity: 1;
 }
 
-.map a {
+#map a {
     text-decoration: none;
 }
 
@@ -168,12 +160,12 @@
     color: #fdfdfd;
 }
 
-.main .map .map-iframe {
+.main #map .map-iframe {
     width: calc(100% - 12px);
     margin-bottom: 12px;
 }
 
-.main .map .map-iframe iframe {
+.main #map .map-iframe iframe {
     width: 100%;
     height: 1000px;
     border: none;
