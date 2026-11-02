@@ -44,13 +44,6 @@
     gap: 20px;
 }
 
-.base-block {
-    background-color: #404040;
-    border-radius: 10px;
-    padding: 1px 7px 1px 14px;
-    flex: 1;
-}
-
 #player-info {
     background-color: #404040;
     border-radius: 10px;
@@ -92,18 +85,8 @@
     margin-left: 12px;
 }
 
-.main #infos {
-    background-color: #404040;
-    border-radius: 10px;
-    padding: 1px 7px 1px 14px;
-    flex: 1
-}
-
 .main #map {
     margin-top: 20px;
-    background-color: #404040;
-    border-radius: 10px;
-    padding: 1px 7px 1px 14px;
 }
 
 .main #infos #domain {

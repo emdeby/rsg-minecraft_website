@@ -13,6 +13,13 @@ h3 {
     text-align: center;
 }
 
+.base-block {
+    background-color: #404040;
+    border-radius: 10px;
+    padding: 1px 7px 1px 14px;
+    flex: 1;
+}
+
 .back-button {
     display: inline-block;
     font-family: Upheaval;
