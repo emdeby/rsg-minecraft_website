@@ -169,8 +169,11 @@
 }
 
 .main #map .map-iframe {
-    width: calc(100% - 12px);
+    width: calc(100%);
     margin-bottom: 12px;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
 }
 
 .main #map .map-iframe iframe {
