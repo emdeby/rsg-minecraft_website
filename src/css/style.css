@@ -1,12 +1,15 @@
-.topbar {
+.navbar {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: -25px;
-    width: 100%;
+    position: fixed;
+    top: -20px;
+    left: 8px;
+    right: 8px;
+    overflow: hidden;
 }
 
-.topbar a {
+.navbar a {
     display: inline-block;
     line-height: 14px;
     font-family: Upheaval;
@@ -19,17 +22,17 @@
     box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.topbar a:hover {
+.navbar a:hover {
     color: #262626;
     background-color: #e8e8e8;
 }
 
-.topbar .login {
+.navbar .login {
     background-color: #d6753d;
     margin-left: auto;
 }
 
-.topbar .title {
+.navbar .title {
     background-color: #537953;
     font-family: Upheaval;
     color: #e8e8e8;
@@ -38,6 +41,10 @@
     font-size: 28px;
     border-radius: 10px;
     box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    margin-top: 70px;
 }
 
 .first-row {
