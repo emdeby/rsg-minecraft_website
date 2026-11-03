@@ -27,9 +27,12 @@
     background-color: #e8e8e8;
 }
 
-.navbar .login {
-    background-color: #d6753d;
+.navbar-right {
     margin-left: auto;
+}
+
+.navbar #login {
+    background-color: #d6753d;
 }
 
 .navbar .title {
