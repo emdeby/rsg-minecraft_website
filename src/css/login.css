@@ -1,0 +1,55 @@
+body {
+    overflow: hidden;
+}
+
+#login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#title {
+    color: #dbdbdb;
+    font-family: Upheaval;
+    font-size: 32px;
+    text-align: center;
+}
+
+#login-message {
+    color: #dbdbdb;
+    font-family: Minecraftia;
+    font-size: 16px;
+    text-align: center;
+}
+
+.text-input {
+    font-size: 18px;
+    background-color: #404040;
+    font-family: Minecraftia;
+    color: #6f6f6f;
+    cursor: text;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 4px;
+}
+
+#login-button {
+    background-color: #d6753d;
+    font-family: Upheaval;
+    color: #dbdbdb;
+    cursor: pointer;
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    margin-top: 6px;
+    font-size: 18px;
+    display: block;
+    margin-left: auto;
+}
+
+#login-button:hover {
+    color: #262626;
+    background-color: #dbdbdb;
+}
