@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" size="32x32" href="../src/images/flavicon.png">
+        <link rel="stylesheet" href="../src/css/universal.css">
+        <link rel="stylesheet" href="../src/css/fonts.css">
+        <link rel="stylesheet" href="../src/css/login.css">
+    </head>
+    <body>
+        <div class="main">
+            <a href="./index_en.html" class="back-button">Back</a>
+            <div id="login-wrapper">
+                <form id="login-form">
+                <p id="title">Login to RSG</p>
+                <input type="email" class="text-input" id="email" placeholder="E-Mail" required><br>
+                <input type="password" class="text-input" id="password" placeholder="Password" required><br>
+                <input type="submit" id="login-button" value="Login">
+                <p id="login-message"></p>
+            </form>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="../scripts/login.js"></script>
+    </body>
+</html>

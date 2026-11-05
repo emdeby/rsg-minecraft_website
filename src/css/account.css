@@ -1,0 +1,26 @@
+body {
+    overflow: hidden;
+}
+
+.details-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#username:hover {
+    cursor: not-allowed;
+}
+
+input {
+    font-size: 14px;
+    background-color: #404040;
+    font-family: Minecraftia;
+    color: #6f6f6f;
+    cursor: text;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 4px;
+}
