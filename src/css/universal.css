@@ -39,3 +39,7 @@ h3 {
     color: #262626;
     background-color: #e8e8e8;
 }
+
+.hidden {
+    display: none !important;
+}

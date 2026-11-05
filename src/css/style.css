@@ -35,6 +35,41 @@
     background-color: #d6753d;
 }
 
+.navbar #user-button {
+    background-color: #d6753d;
+}
+
+.navbar #user-button img {
+    width: 13px;
+    margin-left: 6px;
+}
+
+.navbar #logout-button {
+    color: #e8e8e8;
+    background-color: #626262;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 8px;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar #logout-button:hover {
+    color: #262626;
+    background-color: #e8e8e8;
+}
+
+
+.navbar #login:hover {
+    color: #262626;
+    background-color: #e8e8e8;
+}
+
+.navbar #user-button:hover {
+    color: #262626;
+    background-color: #e8e8e8;
+}
+
 .navbar .title {
     background-color: #537953;
     font-family: Upheaval;
