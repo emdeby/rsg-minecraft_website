@@ -29,5 +29,10 @@ loginForm.addEventListener("submit", async (event) => {
 
     console.log("Login successful!", data);
 
+    console.log("User-ID:", data.user.id);
+    console.log("E-Mail:", data.user.email);
+
     document.getElementById("login-message").textContent = "Login successful!";
+
+    window.location.href = "../index.html"
 });
