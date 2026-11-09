@@ -9,8 +9,6 @@ async function checkAuth() {
 
         console.log("User is authenticated.");
         console.log(data.session.user);
-        loginButton.classList.add("hidden");
-        logoutButton.classList.remove("hidden");
 
         const { data: profile, error: profileError } = await supabaseClient
             .from("profiles")
