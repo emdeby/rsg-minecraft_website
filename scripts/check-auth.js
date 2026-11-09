@@ -1,11 +1,3 @@
-const SUPABASE_URL = "https://gkcsmtjtkbblgescqwem.supabase.co";
-const SUPABASE_KEY = "sb_publishable_KyWjBhpTf5XIhlK7lSMqhw_gckCd-yc";
-
-const supabaseClient = window.supabase.createClient(
-    SUPABASE_URL,
-    SUPABASE_KEY
-);
-
 async function checkAuth() {
     const { data, error } = await supabaseClient.auth.getSession();
     const loginButton = document.getElementById("login");
