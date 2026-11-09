@@ -8,4 +8,6 @@ async function logOut() {
     }
 
     console.log("Logout successful!");
+
+    window.location.reload();
 };
