@@ -22,13 +22,23 @@ async function checkAuth() {
         }
 
         console.log("Minecraft Username:", profile.minecraft_username);
+        window.dispatchEvent(new CustomEvent("profileLoaded", {
+            detail: {
+                profile: profile,
+                user: user
+            }
+        }));
 
-        userButton.textContent = profile.minecraft_username;
-        const head = document.createElement("img");
-        head.src = `https://mc-heads.net/avatar/${encodeURIComponent(profile.minecraft_username)}`;
-        userButton.appendChild(head);
-        
-        userButton.classList.remove("hidden");
+        if (userButton) {
+            userButton.textContent = profile.minecraft_username;
+            const head = document.createElement("img");
+            head.src = `https://mc-heads.net/avatar/${encodeURIComponent(profile.minecraft_username)}`;
+            userButton.appendChild(head);
+            
+            userButton.classList.remove("hidden");
+            loginButton.classList.add("hidden");
+            logoutButton.classList.remove("hidden");
+        }
 
     } else {
         console.log("No user is currently authenticated.")
