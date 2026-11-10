@@ -21,7 +21,6 @@ async function checkAuth() {
             return;
         }
 
-        console.log("Minecraft Username:", profile.minecraft_username);
         window.dispatchEvent(new CustomEvent("profileLoaded", {
             detail: {
                 profile: profile,
