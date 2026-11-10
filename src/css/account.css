@@ -4,21 +4,49 @@ body {
 
 .main {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.account-details-main {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    background-color: var(--secondary-bg-color);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.detail-wrapper {
+    display: block;
 }
 
 p {
     font-family: Minecraftia;
     color: var(--normal-text-color);
-    background-color: var(--secondary-bg-color);
+    background-color: var(--tertiary-bg-color);
     border-radius: 6px;
     padding: 6px;
+    cursor: not-allowed;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+hr {
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.03);
+}
+
+h4 {
+    font-family: Upheaval;
+    color: var(--header-text-color);
+    margin-bottom: -10px;
 }
 
 img {
-    width: 120px;
+    width: 150px;
     margin-bottom: 50px;
+    margin-top: 25px;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
 }

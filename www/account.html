@@ -10,12 +10,20 @@
         <link rel="stylesheet" href="../src/css/colors.css">
     </head>
     <body>
-        <a href="../index.html" class="back-button">Back</a>
+        <a href="../index.html" class="back-button">Zurück</a>
 
         <div class="main">
-            <img id="user-head">
-            <p id="username">null</p>
-            <p id="email">null</p>
+            <div class="account-details-main">
+                <h3>Account Details</h3>
+                <img id="user-head">
+                <hr width="100%">
+                <div class="account-details-secondary">
+                    <h4>Name</h4>
+                    <p id="username">null</p>
+                    <h4>E-Mail</h4>
+                    <p id="email">null</p>
+                </div>
+            </div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
