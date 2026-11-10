@@ -14,14 +14,14 @@ input {
 }
 
 #title {
-    color: #dbdbdb;
+    color: var(--header-text-color);
     font-family: Upheaval;
     font-size: 32px;
     text-align: center;
 }
 
 #login-message {
-    color: #dbdbdb;
+    color: var(--header-text-color);
     font-family: Minecraftia;
     font-size: 16px;
     text-align: center;
@@ -29,7 +29,7 @@ input {
 
 .text-input {
     font-size: 18px;
-    background-color: #404040;
+    background-color: var(--secondary-bg-color);
     font-family: Minecraftia;
     color: #6f6f6f;
     cursor: text;
@@ -40,9 +40,9 @@ input {
 }
 
 #login-button {
-    background-color: #d6753d;
+    background-color: var(--orange);
     font-family: Upheaval;
-    color: #dbdbdb;
+    color: var(--header-text-color);
     cursor: pointer;
     border: none;
     padding: 6px;
@@ -53,6 +53,6 @@ input {
 }
 
 #login-button:hover {
-    color: #262626;
+    color: var(--primary-bg-color);
     background-color: #dbdbdb;
 }

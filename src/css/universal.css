@@ -1,13 +1,13 @@
 body {
-    background-color: #262626;
+    background-color: var(--primary-bg-color);
 }
 
 h3 {
     font-family: Upheaval;
     font-size: 24px;
     letter-spacing: 3px;
-    color: #dbdbdb;
-    background-color: #626262;
+    color: var(--header-text-color);
+    background-color: var(--tertiary-bg-color);
     padding: 3px 10px;
     border-radius: 10px;
     text-align: center;
@@ -15,7 +15,7 @@ h3 {
 }
 
 .base-block {
-    background-color: #404040;
+    background-color: var(--secondary-bg-color);
     border-radius: 10px;
     padding: 1px 7px 1px 14px;
     flex: 1;
@@ -30,13 +30,13 @@ h3 {
     border-radius: 10px;
     text-decoration: none;
     padding: 13px 8px;
-    background-color: #d6753d;
+    background-color: var(--orange);
     margin-left: auto;
     box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .back-button:hover {
-    color: #262626;
+    color: var(--primary-bg-color);
     background-color: #e8e8e8;
 }
 

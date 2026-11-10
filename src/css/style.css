@@ -9,7 +9,7 @@
 }
 
 #player-info {
-    background-color: #404040;
+    background-color: var(--secondary-bg-color);
     border-radius: 10px;
     padding: 1px 7px 1px 14px;
     flex: 1;
@@ -25,8 +25,8 @@
 .main .first-row #player-info a {
     text-decoration: none;
     font-family: Upheaval;
-    color: #dbdbdb;
-    background-color: #626262;
+    color: var(--header-text-color);
+    background-color: var(--tertiary-bg-color);
     margin-top: auto;
     margin-bottom: 14px;
     margin-left: auto;
@@ -37,15 +37,15 @@
 }
 
 .main .first-row #player-info a:hover {
-    background-color: #dbdbdb;
-    color: #404040;
+    background-color: var(--header-text-color);
+    color: var(--secondary-bg-color);
     padding: 3px 10px;
     border-radius: 10px;
 }
 
 .main p {
     font-family: Minecraftia;
-    color: #c3c3c3;
+    color: var(--normal-text-color);
     font-size: 16px;
     margin-left: 12px;
 }
@@ -62,7 +62,7 @@
 }
 
 .main #infos #domain button {
-    color: #dbdbdb;
+    color: var(--header-text-color);
     background: none;
     cursor: pointer;
     border: none;
@@ -71,7 +71,7 @@
 }
 
 .main #infos #domain button:hover {
-    background-color: #626262;
+    background-color: var(--tertiary-bg-color);
     border-radius: 10px;
 }
 
@@ -84,8 +84,8 @@
     font-family: Minecraftia;
     visibility: hidden;
     width: 140px;
-    background-color: #262626;
-    color: #dbdbdb;
+    background-color: var(--primary-bg-color);
+    color: var(--header-text-color);
     text-align: center;
     border-radius: 6px;
     padding: 5px;
@@ -107,7 +107,7 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: #262626 transparent transparent transparent;
+    border-color: var(--primary-bg-color) transparent transparent transparent;
 }
 
 .tooltip:hover .tooltiptext {

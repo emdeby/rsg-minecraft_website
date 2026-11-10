@@ -15,8 +15,8 @@ body {
 
 .input-button {
     font-family: Minecraftia;
-    color: #c3c3c3;
-    background-color: #262626;
+    color: var(--normal-text-color);
+    background-color: var(--primary-bg-color);
 }
 
 .input-button:hover {
@@ -26,7 +26,7 @@ body {
 
 input {
     font-size: 14px;
-    background-color: #404040;
+    background-color: var(--secondary-bg-color);
     font-family: Minecraftia;
     color: #6f6f6f;
     cursor: text;
@@ -44,12 +44,12 @@ input {
 }
 
 #new-password-submit {
-    background-color: #d6753d;
+    background-color: var(--orange);
     font-family: Upheaval;
-    color: #dbdbdb;
+    color: var(--header-text-color);
 }
 
 #new-password-submit:hover {
-    color: #262626;
-    background-color: #dbdbdb;
+    color: var(--primary-bg-color);
+    background-color: var(--header-text-color);
 }

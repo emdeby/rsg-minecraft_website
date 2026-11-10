@@ -12,8 +12,8 @@ body {
 
 p {
     font-family: Minecraftia;
-    color: #c3c3c3;
-    background-color: #404040;
+    color: var(--normal-text-color);
+    background-color: var(--secondary-bg-color);
     border-radius: 6px;
     padding: 6px;
 }
