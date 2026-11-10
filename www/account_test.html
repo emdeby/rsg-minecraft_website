@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Account</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" size="32x32" href="../src/images/flavicon.png">
+        <link rel="stylesheet" href="../src/css/universal.css">
+        <link rel="stylesheet" href="../src/css/fonts.css">
+        <link rel="stylesheet" href="../src/css/account.css">
+        <link rel="stylesheet" href="../src/css/colors.css">
+    </head>
+    <body>
+        <a href="../index.html" class="back-button">Back</a>
+        <div class="main">
+            <div id="details-wrapper">
+                <form id="account-details">
+                    <input type="text" id="username" class="not-editable" placeholder="null" disabled><br>
+                    <input type="email" id="email" placeholder="null"><br>
+                    <input type="button" class="input-button" id="change-pwd-button" onclick="toggleNewPwdFields()" value="Change password"><br>
+                    <input type="text" id="new-password1" class="hidden" placeholder="New pasword..."><br>
+                    <input type="text" id="new-password2" class="hidden" placeholder="Retype new pasword..."><br>
+                    <div id="button-wrapper">
+                        <input type="button" class="input-button hidden" id="cancel-button" onclick="toggleNewPwdFields()" value="Cancel">
+                        <input type="submit" id="new-password-submit" class="hidden" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="../scripts/supabase.js"></script>
+        <script src="../scripts/check-auth.js"></script>
+
+        <script>
+            const newPwdField1 = document.getElementById("new-password1");
+            const newPwdField2 = document.getElementById("new-password2");
+            const changePwdBUtton = document.getElementById("change-pwd-button");
+            const cancelButton = document.getElementById("cancel-button");
+            const submitButton = document.getElementById("new-password-submit");
+
+            function toggleNewPwdFields() {
+                if (newPwdField1.classList.contains("hidden")) {
+                    newPwdField1.classList.remove("hidden");
+                    newPwdField2.classList.remove("hidden");
+                    changePwdBUtton.classList.add("hidden");
+                    cancelButton.classList.remove("hidden");
+                    submitButton.classList.remove("hidden");
+                } else {
+                    newPwdField1.classList.add("hidden");
+                    newPwdField2.classList.add("hidden");
+                    changePwdBUtton.classList.remove("hidden");
+                    cancelButton.classList.add("hidden");
+                    submitButton.classList.add("hidden");
+                }
+            }
+        </script>
+    </body>
+</html>

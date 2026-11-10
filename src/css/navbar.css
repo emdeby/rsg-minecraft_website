@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: -20px;
+    left: 8px;
+    right: 8px;
+    overflow: hidden;
+}
+
+.navbar a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0px 10px;
+
+    font-family: Upheaval;
+    font-size: 14px;
+    color: #e8e8e8;
+    background-color: var(--green);
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a:hover {
+    color: var(--primary-bg-color);
+    background-color: #e8e8e8;
+}
+
+.navbar-right {
+    margin-left: auto;
+}
+
+.navbar #login {
+    background-color: var(--orange);
+}
+
+.navbar #user-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+}
+
+.navbar #user-button img {
+    width: 26px;
+    margin-left: 6px;
+}
+
+.navbar #logout-button {
+    color: #e8e8e8;
+    background-color: var(--tertiary-bg-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 10px;
+    height: 40px;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar #logout-button:hover {
+    color: var(--primary-bg-color);
+    background-color: #e8e8e8;
+}
+
+
+.navbar #login:hover {
+    color: var(--primary-bg-color);
+    background-color: #e8e8e8;
+}
+
+.navbar #user-button:hover {
+    color: var(--primary-bg-color);
+    background-color: #e8e8e8;
+}
+
+.navbar .title {
+    background-color: #537953;
+    font-family: Upheaval;
+    color: #e8e8e8;
+    padding: 7px 7px 7px 14px;
+    letter-spacing: 3px;
+    font-size: 28px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.1);
+}

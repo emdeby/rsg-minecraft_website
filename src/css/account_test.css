@@ -1,0 +1,55 @@
+body {
+    overflow: hidden;
+}
+
+#details-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.not-editable:hover {
+    cursor: not-allowed;
+}
+
+.input-button {
+    font-family: Minecraftia;
+    color: var(--normal-text-color);
+    background-color: var(--primary-bg-color);
+}
+
+.input-button:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+input {
+    font-size: 14px;
+    background-color: var(--secondary-bg-color);
+    font-family: Minecraftia;
+    color: #6f6f6f;
+    cursor: text;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 4px;
+}
+
+#button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#new-password-submit {
+    background-color: var(--orange);
+    font-family: Upheaval;
+    color: var(--header-text-color);
+}
+
+#new-password-submit:hover {
+    color: var(--primary-bg-color);
+    background-color: var(--header-text-color);
+}

@@ -1,0 +1,11 @@
+body {
+    --primary-bg-color: #262626;
+    --secondary-bg-color: #404040;
+    --tertiary-bg-color: #626262;
+
+    --header-text-color: #dbdbdb; 
+    --normal-text-color: #c3c3c3;
+
+    --green: #537953;
+    --orange: #d6753d;
+}
